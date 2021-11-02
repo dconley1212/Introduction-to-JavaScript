@@ -19,6 +19,13 @@ Do the following:
 
    HINT: no function required
 */
+const votingAge = 18
+if (votingAge >= 18) {
+  console.log(true);
+}
+
+
+
 
 
 
@@ -37,6 +44,7 @@ Do the following:
 
 
 
+
 /*
 Task 1c - Convert Strings to Numbers
 
@@ -48,8 +56,9 @@ Do the following:
    HINT: look up the Number method
 */
 
+const stringType = '1999'
 
-
+console.log('1c task', parseInt(stringType));
 
 /*
 Task 1d - Multiply
@@ -59,9 +68,10 @@ Do the following:
    2. Receive the parameters: a and b
    3. Multiply a and b and return the answer
 */
-
-function multiply(/*add your code here*/){
-  /*add your code here*/
+const a = 2
+const b = 2
+function multiply(a,b){
+  return a * b
 }
 
 
@@ -75,9 +85,10 @@ Do the following:
  2. Use the received value to calculate the age in dog years (1 human year is equal to 7 dog years)
  3. Return the newly calculated age
 */
-
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+const humanYears = 7
+function dogYears(humanYears){
+  return humanYears * 7
+  console.log('Task 2',dogYears);
 }
 
 
@@ -109,27 +120,28 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(weight, age){
-  if (age >= 1 && weight <= 5) {
-    return weight * 0.05;
-  } else if (age >= 1 && weight >=6 && weight <=10) {
-    return weight *0.04;
-  } else if (age >=1 && weight >= 11 && weight <= 15){
-    return weight *0.03;
-  } else if (age >= 1 && weight > 15){
-    return weight *0.02;
-  } else if (age <1 && age >= 0.583) {
-    return weight * 0.04;
-  } else if (age < 0.583 && age >= 0.333) {
-    return weight * 0.05;
-  } else if (age < 0.333) {
-    return weight *0.1;
-  }
 
- console.log('task 3', hungryDog(15,1));
 
   /*add your code here*/
-}
+
+  function hungryDog(weight, age){
+    if (age >= 1 && weight <= 5) {
+      return weight * 0.05;
+    } else if (age >= 1 && weight >=6 && weight <=10) {
+      return weight *0.04;
+    } else if (age >=1 && weight >= 11 && weight <= 15){
+      return weight *0.03;
+    } else if (age >= 1 && weight > 15){
+      return weight *0.02;
+    } else if (age <1 && age >= 0.583) {
+      return weight * 0.04;
+    } else if (age < 0.583 && age >= 0.333) {
+      return weight * 0.05;
+    } else if (age < 0.333) {
+      return weight *0.1;
+    }
+  }
+   console.log('task 3', hungryDog(15,1));
 
 
 
