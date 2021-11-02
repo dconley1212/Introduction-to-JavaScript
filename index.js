@@ -235,10 +235,10 @@ Using the annoyingSong function below do the following:
 2. At each invocation, it should RETURN this string (note: the tests are expecting the same string as below):
     "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
-
-function annoyingSong(i){
-  for (let i = 99; i > 0; i--)
-  return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i--} bottles of soda on the wall` 
+const bottlesOfSoda = 5;
+function annoyingSong(bottlesOfSoda){
+  for (let i = 5; i > 0; i--) {
+  return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`}
 }
 
 
@@ -257,10 +257,20 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+const gradeScore = 90
+function grade(gradeScore){
+if (gradeScore >= 90 && gradeScore <= 100){
+  return "you got an A";
+} else if (gradeScore >= 80 && gradeScore < 90 ) {
+  return "you got a B";
+} else if (gradeScore >= 70 && gradeScore < 80) {
+  return "you got a C"
+} else if (gradeScore >= 60 && gradeScore < 70) {
+  return "you got a D"
+} else {
+  return "you got an F"
 }
-
+}
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
