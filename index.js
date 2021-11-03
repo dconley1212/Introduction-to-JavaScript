@@ -22,7 +22,7 @@ Do the following:
 const votingAge = 18
 if (votingAge >= 18) {
   console.log(true);
-}
+} else {console.log(false);}
 
 
 
@@ -40,7 +40,12 @@ Do the following:
    HINT: no function required
 */
 
-
+let sixPack = 6
+let drinkInHand = 1
+if ( drinkInHand === 1){
+  sixPack = 5 
+}
+console.log(sixPack);
 
 
 
